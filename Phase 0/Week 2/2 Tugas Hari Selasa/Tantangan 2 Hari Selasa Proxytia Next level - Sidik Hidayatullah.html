@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by anonymous (http://jsbin.com/nelepejeno/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+// daftar variabel
+
+var name = 'Sven';
+
+var role = 'Ksatria';
+
+var tahunLahir = 1993; // di isi tahun lahir pemain
+
+var umur = 2017 - tahunLahir;
+
+var playerHealth = Math.floor(tahunLahir * Math.random());
+
+var monsterHealth = Math.floor(tahunLahir * Math.random());
+
+var kodeMonster = Math.floor(Math.pow(100, Math.random()));
+
+// if untuk nama
+
+if (name === ''){
+  name = 'Makhluk Tanpa Nama';
+  role = 'Kacung';
+  console.log('Selamat datang di Dunia Proxytia, wahai ' + name);
+} else {  
+console.log('Selamat datang di Dunia Proxytia, ' + name);
+}
+
+// if untuk peran
+
+if (role === 'Kacung') {
+  console.log('Halo Kacung tanpa nama, kamu kacung, carilah majikanmu!');
+} else if (role === '') {
+  console.log('Pilih peranmu untuk memulai game');
+} else if (role === 'Ksatria') {
+	console.log('Halo Ksatria ' + name + ' , kamu dapat menyerang dengan senjatamu!');
+} else if (role === 'Tabib') {
+  console.log('Halo Tabib ' + name + ' , kamu akan membantu temanmu yang terluka.');
+} else if (role === 'Penyihir') {
+  console.log('Halo Penyihir ' + name + ' , ciptakan keajaiban yang membantu kemenanganmu!');
+}
+
+//Data awal pertarungan
+
+console.log('Tahun lahir: ' + tahunLahir);
+console.log('Umur: ' + umur);
+console.log('Darah pemain: ' + playerHealth);
+console.log('Darah monster: '+ monsterHealth);
+console.log('Kode monster: '+ kodeMonster);
+
+//pengulangan untuk pertarungan
+
+for (tahunLahir; tahunLahir > 0; tahunLahir--) {
+  if (tahunLahir % umur === 0) {
+    if (tahunLahir % kodeMonster === 0) {
+      console.log('Health keduanya bertambah');
+      playerHealth += kodeMonster;
+      monsterHealth += umur;
+    } else {
+    console.log (role + ' ' + name + ' menyerang monster!');
+    monsterHealth -= umur;
+    }
+  } else if (tahunLahir % kodeMonster === 0) {
+    console.log('monster menyerang ' + role + ' ' + name + '!');
+    playerHealth -= kodeMonster;
+  }
+}
+
+console.log('Sisa darah mu: ' + playerHealth);
+console.log('Sisa darah monster: ' + monsterHealth);
+
+if (playerHealth > monsterHealth) {
+  console.log('Selamat, ' + role + ' ' + name + ' memenangkan pertarungan!');
+} else if (playerHealth === monsterHealth) {
+  console.log('Wahh setelah bertarung dengan sengit, ' + role + ' ' + name + ' hanya mampu mengakhirinya dengan seri!');
+} else {
+  console.log('Sayang sekali, ' + role + ' ' + name + ' dikalahkan monster...');
+}
+
+
+
+
+</script>
+</body>
+</html>

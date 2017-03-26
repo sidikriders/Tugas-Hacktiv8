@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by anonymous (http://jsbin.com/nadamezoge/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+// Constructer Function
+
+function mobil(pabrikanMobil, modelMobil, warnaMobil) {
+  this.pabrikan = pabrikanMobil;
+  this.model = modelMobil;
+  this.warna = warnaMobil;
+  this.maju = function(){
+    console.log('Mobil ' + this.pabrikan + ' ' + this.model + ' ' + this.warna + ' , bergerak maju!');
+  };
+}
+
+//Instantiate
+
+var mobil1 = new mobil("Honda", "Accord", "Hitam");
+var mobil2 = new mobil("Honda", "Civic", "Silver");
+
+//Uji Coba
+
+console.log('Mobil 1 adalah ' + mobil1.pabrikan + ' ' + mobil1.model + ' ' + mobil1.warna);
+mobil1.maju();
+mobil1.warna = 'Silver';
+mobil1.maju();
+console.log('Mobil 2 adalah ' + mobil2.pabrikan + ' ' + mobil2.model + ' ' + mobil2.warna);
+mobil2.maju();
+</script>
+</body>
+</html>

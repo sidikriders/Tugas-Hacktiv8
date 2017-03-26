@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by anonymous (http://jsbin.com/qikajoxeja/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+var object1 = {
+    hari: 'Senin',
+    kehadiran: 'Masuk',
+    alasan: ''
+};
+
+var object2 = {
+    hari: 'Selasa',
+    kehadiran: 'Masuk',
+    alasan: ''
+};
+
+var object3 = {
+    hari: 'Rabu',
+    kehadiran: 'Absen',
+    alasan: 'Dinas Luar'
+};
+
+var array = [object1, object2, object3];
+var count = 0;
+
+
+function iterasi(array) {
+  for (i = 0; i < array.length; i++) {
+  console.log('Hari: ' + array[i].hari);
+  console.log('Kehadiran: ' + array[i].kehadiran);
+  if (array[i].kehadiran === 'Masuk') {
+    console.log();
+    count++;
+  } else if (array[i].kehadiran === 'Absen') {
+    console.log('Alasan: ' + array[i].alasan);
+  }
+}// punyanya for
+}
+
+// Output Bagian Awal
+
+iterasi(array);
+
+
+var countTidakMasuk = (array.length - count);
+
+
+// Output Bagian Akhir
+
+console.log('Total hari kerja minggu ini: ' + array.length + ' hari');
+console.log('Total Masuk: ' + count + ' hari');
+console.log('Total Tidak Masuk: ' + countTidakMasuk + ' hari');
+</script>
+</body>
+</html>

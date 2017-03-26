@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<title>Form Pendaftaran</title>
+</head>
+
+<body>
+<h1>Buat Account Baru!</h1>
+
+<h2>Sign Up Form</h2>
+
+<form>
+	<label for="firstname">First Name</label>
+	<br>
+	<input name="FirstName" type="text">
+	<br>
+	<br>
+	<label for="lastname">Last Name</label>
+	<br>
+	<input name="last-name" type="text">
+</form>
+	
+<br>
+<!--Pilih Jenis Kelamin-->
+<form>
+<label for="gender">Gender:</label>
+<br>
+<input type="radio" name="gender" value="Male" checked> Male
+<br/>
+<input type="radio" name="gender" value="Female"> Female
+<br/>
+<input type="radio" name="gender" value="Other"> Other
+	</form>
+	
+<br>
+<!--Pilih Kewarganegaraan-->
+<form>
+	<label for="nationality">Nationality</label>
+	<br>
+<select name="nationality">
+	<option value="indonesia">Indonesia</option>
+	<option value="singapore"> Singaporean</option>
+	<option value="malaysia"> Malaysian</option>
+	<option value="australia"> Australian</option>
+</select>
+	</form>
+
+<br>
+<!--Bahasa yang digunakan-->
+<form>
+	<label for="languagespoken">Language Spoken:</label>
+<br>
+<input type="checkbox" name="day" value="Friday"> Bahasa Indonesia
+<br>
+<input type="checkbox" name="day" value="Saturday"> English
+<br>
+<input type="checkbox" name="day" value="Sunday"> Other
+</form>
+
+<br>
+<!--isi biografi-->
+<form>
+<label name="bio">Bio:</label>
+<br>
+<textarea name="biografi" class="textarea"></textarea>
+</form>
+
+<form action="welcome.html" method="POST">
+  <input type="submit" value="Sign Up" />
+</form>
+</body>
+</html>

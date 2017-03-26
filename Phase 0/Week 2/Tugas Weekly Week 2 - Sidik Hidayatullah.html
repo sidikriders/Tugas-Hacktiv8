@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by anonymous (http://jsbin.com/sekimuxuxu/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+var angkaInput = prompt('MasukkanAngka');
+
+var angka = Number(angkaInput);
+
+var pembatas = Math.floor(Math.sqrt(angka));
+
+var count = 0;
+
+var angkaPembagi = [];
+
+function check(angka) {
+  if (isNaN(angka) === false) {
+    for (i = 2; i <= pembatas; i++) {
+    if (angka % i === 0) {
+      count++;
+      angkaPembagi.push(i);
+      } else {}
+    }
+    if (count === 0) {
+    console.log('Selamat!! Angka ' + angka + ' adalah bilangan prima!');
+    document.write(' Selamat!! Angka ' + angka + ' adalah bilangan prima!');
+    document.write(' Whooo!!');
+    document.write(' <img src="https://media.giphy.com/media/x4gQEhf736ZMc/giphy.gif">');
+  } else if (count > 0) {
+    console.log('Angka ' + angka + ' bukan bilangan prima');
+    console.log('Karena ' + angka + ' habis dibagi ' + angkaPembagi);
+    document.write('Angka ' + angka + ' bukan bilangan prima!');
+    document.write('Karena angka ' + angka + ' habis dibagi ' + angkaPembagi);
+    document.write(' <img src="https://media.giphy.com/media/MdXXZh65YfC7e/giphy.gif">');
+  }
+  } else {
+    console.log('Hmm sepertinya data yang kamu masukkan bukan angka, silahkan refresh halaman ini dan coba lagi.');
+    document.write('Hmm sepertinya data yang kamu masukkan bukan angka, silahkan refresh halaman ini dan coba lagi.');
+    document.write(' <img src="https://media.giphy.com/media/yj5oYHjoIwv28/giphy.gif">')
+  }
+}
+check(angka);
+</script>
+</body>
+</html>

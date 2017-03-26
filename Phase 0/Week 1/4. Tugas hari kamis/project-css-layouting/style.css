@@ -1,0 +1,75 @@
+/* CSS Document */
+
+body {
+	background: url(img/sample-pattern.png) repeat;
+}
+
+header {
+	background-color: #fff;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: right;
+    width: 100%;
+    z-index: 10000;
+}
+
+#logo {
+	float: left;
+	margin: 5px 5px;
+}
+
+nav{
+	float: right;
+}
+
+ul {
+	margin: 0 0;
+}
+
+li {
+	font-family: "Fjalla One";
+	display: inline-block;
+	margin: 13px 20px;
+}
+
+section {
+	position: relative;
+	top: 50px;
+	margin: 0 0;
+}
+
+h1 {
+	text-align: center;
+	font-family: "Slabo 27px";
+}
+
+#article-list{
+	margin: 50px 100px;
+    position: static;
+	background-color: rgba(248,248,248,1.0);
+}
+
+article {
+	border-bottom: #B8B8B8 1px solid;
+	padding: 20px;
+	font-family: "Slabo 27px";
+}
+
+footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	background-color: #000000;
+	color: #FFFFFF;
+	text-align: center;
+	width: 100%;
+	margin-top: 50px;
+}
+
+h5 {
+	margin: 20px auto;
+	font-family: "Slabo 27px";
+	
+}
