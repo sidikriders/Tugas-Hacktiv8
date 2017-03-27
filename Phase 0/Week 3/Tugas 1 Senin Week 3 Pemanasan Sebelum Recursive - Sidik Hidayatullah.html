@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by anonymous (http://jsbin.com/rimaqecuwa/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+var inputAngka1 = prompt('Masukkan angka pertama');
+var angka1 = Number(inputAngka1);
+var m = 1;
+
+function perkalian1(angka1) {
+  for (n = 2; n <= angka1; n++) {
+  m = m*n;
+  }
+  console.log(m);
+}
+
+perkalian1(angka1);
+
+var inputAngka2 = prompt('Masukkan angka batas terbesar');
+var angka2 = Number(inputAngka2);
+var inputAngka3 = prompt('Masukkan angka selisih')
+var angka3 = Number(inputAngka3);
+var m2 = 1;
+
+function perkalian2(angka2, angka3) {
+  for (n2 = 2; n2 <= angka2; n2 += angka3) {
+    m2 = m2*n2;
+  }
+  console.log(m2);
+}
+
+perkalian2(angka2, angka3);
+</script>
+</body>
+</html>
