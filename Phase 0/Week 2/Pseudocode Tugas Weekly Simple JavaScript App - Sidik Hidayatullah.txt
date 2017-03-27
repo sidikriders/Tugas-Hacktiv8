@@ -1,0 +1,19 @@
+SIMPAN sebuah angka
+
+SIMPAN pembatas berdasarkan pembulatan kebawah hasil dari akar angka tersebut
+
+CEK apakah angka tersebut merupakan bilangan asli yang lebih besar dari 1
+
+  JIKA ya MAKA BUAT sebuah deret angka dari 2 hingga pembatas
+
+               CEK apakah angka tersebut habis di bagi masing-masing deret
+                   JIKA angka habis di bagi deret MAKA count ditambah 1
+                   JIKA angka tidak habis di bagi deret MAKA diamkan saja
+
+               JIKA count sama dengan 0 MAKA TULIS bahwa angka tersebut adalah bilangan prima
+
+	       JIKA count lebih besar dari pada 0 MAKA TULIS bahwa angka tersebut bukanlah bilangan prima
+
+  JIKA tidak MAKA TULIS bahwa angka tersebut bukan angka asli yang lebih besar dari 1
+
+                                            
