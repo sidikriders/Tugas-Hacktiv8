@@ -1,0 +1,51 @@
+/* CSS Document */
+body {
+	background-color: aliceblue;
+}
+
+.body {
+	width: 100%;
+	margin: 0px;
+	padding-top: 10%;
+}
+
+#kotak-tengah {
+	width: 50%;
+	min-width: 250px;
+	max-width: 500px;
+	margin: auto;
+	background-color: rgba(40,155,255,1.00);
+	border-radius: 25px;
+	padding: 30px;
+}
+
+p {
+	font-family: 'Lobster', cursive;
+	font-size: 30px;
+	text-align: center;
+	width: 50%;
+	margin: auto auto 30px auto;
+	color: rgba(151,149,149,1.00)
+}
+
+h2 {
+	font-family: 'Lobster', cursive;
+	color: rgba(85,90,134,1.00);
+	font-size: 170%;
+	margin: auto 25% auto 25%;
+	text-align: center;
+	
+}
+
+#angka {
+	margin: 30px 25% 30px 25%;
+	width: 50%;
+	height: 30px;
+	text-align: center;
+}
+
+#submit {
+	width: 20%;
+	margin: auto 40% 30px 40%;
+}
+
